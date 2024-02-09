@@ -1,10 +1,10 @@
 # :trophy: Retos de Programame
 
-Bienvenido/a al repositorio de retos de Programáme, un espacio dedicado a enfrentar desafíos de programación inspirados en la competición "Programáme", enfocada en estudiantes y entusiastas de la programación de todos los niveles. Aquí podrás practicar tus habilidades, aprender de manera divertida y prepararte para competiciones.
+Bienvenido/a al repositorio de retos de Programame, un espacio dedicado a enfrentar desafíos de programación inspirados en la competición "Programame", enfocada en estudiantes y entusiastas de la programación de todos los niveles. Aquí podrás practicar tus habilidades, aprender de manera divertida y prepararte para competiciones.
 
 ## :bookmark: Acerca de Programame
 
-"Programáme" es una competición que busca fomentar el interés por la programación a través de desafíos que promueven el trabajo en equipo y el desarrollo de habilidades en algoritmos y estructuras de datos. Para más información sobre la competición y cómo participar, visita el sitio oficial de [Programáme](https://www.programame.com).
+"Programame" es una competición que busca fomentar el interés por la programación a través de desafíos que promueven el trabajo en equipo y el desarrollo de habilidades en algoritmos y estructuras de datos. Para más información sobre la competición y cómo participar, visita el sitio oficial de [Programame](https://www.programame.com).
 
 ## :computer: Los Retos
 
@@ -36,5 +36,5 @@ Si tienes dudas o necesitas ayuda con alguno de los retos, no dudes en abrir un 
 
 ---
 
-¡Agradecemos tu interés y contribuciones a este repositorio de retos de Programáme! :heart: Recuerda que la práctica y la perseverancia son claves para mejorar en el mundo de la programación.
+¡Agradecemos tu interés y contribuciones a este repositorio de retos de Programame! :heart: Recuerda que la práctica y la perseverancia son claves para mejorar en el mundo de la programación.
 
