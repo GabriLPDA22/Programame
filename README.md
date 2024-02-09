@@ -25,9 +25,9 @@ Si estás interesado/a en contribuir con nuevos retos o soluciones, te invitamos
 
 Este espacio está dedicado a todos aquellos que han contribuido al repositorio, ya sea aportando soluciones, retos o mejorando la documentación. ¡Gracias por hacer crecer esta comunidad!
 
-- **Participante 1**: Descripción o enlace a perfil.
-- **Participante 2**: Descripción o enlace a perfil.
-- ...
+- **Participante 1**: https://github.com/Franvilla03
+- **Participante 2**: [https://github.com/](https://github.com/Adrian-Abril)
+- **Participante 3**: https://github.com/GabriLPDA22
 
 ## :question: Soporte
 
