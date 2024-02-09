@@ -2,7 +2,7 @@
 
 Bienvenido/a al repositorio de retos de Programáme, un espacio dedicado a enfrentar desafíos de programación inspirados en la competición "Programáme", enfocada en estudiantes y entusiastas de la programación de todos los niveles. Aquí podrás practicar tus habilidades, aprender de manera divertida y prepararte para competiciones.
 
-## :bookmark: Acerca de Programáme
+## :bookmark: Acerca de Programame
 
 "Programáme" es una competición que busca fomentar el interés por la programación a través de desafíos que promueven el trabajo en equipo y el desarrollo de habilidades en algoritmos y estructuras de datos. Para más información sobre la competición y cómo participar, visita el sitio oficial de [Programáme](https://www.programame.com).
 
