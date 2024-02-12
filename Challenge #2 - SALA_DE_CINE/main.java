@@ -19,7 +19,7 @@ public class Main {
 
         // Mostrar los detalles del cine
         System.out.println("\nCine:");
-        System.out.println("Precio de la entrada: $" + miCine.getPrecioEntrada());
+        System.out.println("Precio de la entrada: €" + miCine.getPrecioEntrada());
         System.out.println("Película en reproducción: " + miCine.getPeliculaEnReproduccion().getTitulo());
 
         // Modificar el precio de la entrada
