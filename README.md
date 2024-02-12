@@ -1,4 +1,4 @@
-# :trophy: Retos de Programame
+## :trophy: Retos de Programame
 
 Bienvenido/a al repositorio de retos de Programame, un espacio dedicado a enfrentar desafíos de programación inspirados en la competición "Programame", enfocada en estudiantes y entusiastas de la programación de todos los niveles. Aquí podrás practicar tus habilidades, aprender de manera divertida y prepararte para competiciones.
 
