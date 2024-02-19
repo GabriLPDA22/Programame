@@ -1,11 +1,11 @@
-public class Asiento{
+public class asiento{
     private final char columna;
     public final int fila;
     private boolean ocupado;
 
 
     // Constructor
-    public Asiento(char columna, int fila) {
+    public asiento(char columna, int fila) {
         this.columna = columna;
         this.fila = fila;
         this.ocupado = false;
@@ -15,7 +15,8 @@ public class Asiento{
     public char getColumna() {
         return columna;
     }
-
+    
+    
     public int getFila() {
         return fila;
     }
