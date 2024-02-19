@@ -3,13 +3,13 @@ public class Cine {
     // Atributos de la clase Cine
     private Pelicula peliculaEnReproduccion;
     private double precioEntrada;
+    private String Titulo;
 
-
-    //Constructor
-    public Cine(double precioEntrada, Pelicula peliculaEnPelicula ){
-
+    // Constructor
+    public Cine(double precioEntrada, Pelicula peliculaEnReproduccion, String Titulo) {
         this.precioEntrada = precioEntrada;
-        this.peliculaEnReproduccion = peliculaEnReproduccion;
+        this.peliculaEnReproduccion = peliculaEnReproduccion; // Corregido el nombre del parámetro
+        this.Titulo = Titulo;
     }
 
 
@@ -29,5 +29,13 @@ public class Cine {
 
     public void setPrecioEntrada(double precioEntrada) {
         this.precioEntrada = precioEntrada;
+    }
+
+    public String getTitulo() {
+        return Titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        Titulo = titulo;
     }
 }
