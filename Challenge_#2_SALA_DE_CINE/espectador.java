@@ -38,4 +38,10 @@ class Espectador {
     {
         this.nombre = nombre;
     }
+
+    // Sobrescribiendo el método toString()
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + ", Edad: " + edad + ", Dinero: " + dinero;
+    }
 }
