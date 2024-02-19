@@ -9,14 +9,14 @@ public class Sala{
     
     public Sala(){
         asientos = new Asiento[FILAS][COLUMNAS];
-    }
+    } 
     
 
     private void inicializarAsientos() {
         for (int x = 0; x < FILAS; x++) {
             for (int y = 0; y < COLUMNAS; y++) {
                 // Nota que la fila 1 comienza al final de la matriz
-                asientos[x][y] = new Asiento((char)('A' + y), FILAS - fila);
+                asientos[x][y] = new Asiento((char)('A' + y), FILAS - x);
 
             }
         }

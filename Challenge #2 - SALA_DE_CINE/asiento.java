@@ -16,19 +16,10 @@ public class Asiento{
         return columna;
     }
 
-    public void setcolumna(char columna){
-        this.columna = columna;
-    }
-
-
     public int getFila() {
         return fila;
     }
 
-    public void setfila(char fila){
-
-        this.fila = fila;
-    }
 
     public boolean isOcupado() {
         return ocupado;
