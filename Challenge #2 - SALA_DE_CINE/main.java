@@ -1,4 +1,4 @@
-public class Main {
+public class main {
     public static void main(String[] args) {
         // Crear una instancia de Pelicula
         Pelicula miPelicula = new Pelicula("Interstellar", 169, 13, "Christopher Nolan");
