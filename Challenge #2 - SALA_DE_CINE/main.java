@@ -10,20 +10,15 @@ public class main {
         System.out.println("Edad mínima: " + miPelicula.getEdadMinima() + " años");
         System.out.println("Director: " + miPelicula.getDirector());
 
-        // Modificar el título de la película
-        miPelicula.setTitulo("Interestelar");
-        System.out.println("\nTítulo modificado: " + miPelicula.getTitulo());
 
         // Crear una instancia de Cine
-        Cine miCine = new Cine(8.50, miPelicula);
+        Cine miCine = new Cine(8.50, miPelicula, null);
 
         // Mostrar los detalles del cine
         System.out.println("\nCine:");
-        System.out.println("Precio de la entrada: €" + miCine.getPrecioEntrada());
+        System.out.println("Precio de la entrada: " + miCine.getPrecioEntrada() +" $");
         System.out.println("Película en reproducción: " + miCine.getPeliculaEnReproduccion().getTitulo());
 
-        // Modificar el precio de la entrada
-        miCine.setPrecioEntrada(9.00);
-        System.out.println("Precio de la entrada modificado: $" + miCine.getPrecioEntrada());
     }
 }
+
