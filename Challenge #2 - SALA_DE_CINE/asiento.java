@@ -1,11 +1,11 @@
-public class Asiento {
+public class Asiento{
     private final char columna;
-    private final char fila;
+    public final int fila;
     private boolean ocupado;
 
 
     // Constructor
-    public Asiento(char columna, char fila) {
+    public Asiento(char columna, int fila) {
         this.columna = columna;
         this.fila = fila;
         this.ocupado = false;
@@ -16,8 +16,18 @@ public class Asiento {
         return columna;
     }
 
-    public char getFila() {
+    public void setcolumna(char columna){
+        this.columna = columna;
+    }
+
+
+    public int getFila() {
         return fila;
+    }
+
+    public void setfila(char fila){
+
+        this.fila = fila;
     }
 
     public boolean isOcupado() {
