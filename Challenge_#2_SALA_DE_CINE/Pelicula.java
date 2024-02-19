@@ -47,4 +47,10 @@ public class Pelicula {
     public void setDirector(String director) {
         this.director = director;
     }
+
+    public double getPrecioEntrada() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getPrecioEntrada'");
+    }
+
 }

@@ -12,7 +12,7 @@ public class Sala{
     } 
     
 
-    private void inicializarAsientos() {
+    public void inicializarAsientos() {
         for (int x = 0; x < FILAS; x++) {
             for (int y = 0; y < COLUMNAS; y++) {
                 // Nota que la fila 1 comienza al final de la matriz
@@ -45,5 +45,17 @@ public class Sala{
         }
 
         return false;
+    }
+
+
+    public Asiento getAsiento(char c, int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAsiento'");
+    }
+
+
+    public void imprimirEstadoAsientos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'imprimirEstadoAsientos'");
     }
 }

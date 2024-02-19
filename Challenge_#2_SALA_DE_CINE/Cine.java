@@ -1,4 +1,4 @@
-public class Cine<Pelicula> {
+public class Cine {
     
     // Atributos de la clase Cine
     private Pelicula peliculaEnReproduccion;
