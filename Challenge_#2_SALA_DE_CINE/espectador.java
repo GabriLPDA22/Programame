@@ -1,5 +1,11 @@
-public class espectador {
-    private String nombre;
-    private int edad;
-    private String dinero;
+class Espectador {
+    String nombre;
+    int edad;
+    double dinero;
+
+    public Espectador(String nombre, int edad, double dinero) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.dinero = dinero;
+    }
 }
