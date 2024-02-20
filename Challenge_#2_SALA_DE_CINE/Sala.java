@@ -48,14 +48,4 @@ public class Sala{
     }
 
 
-    public Asiento getAsiento(char c, int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAsiento'");
-    }
-
-
-    public void imprimirEstadoAsientos() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirEstadoAsientos'");
-    }
 }
