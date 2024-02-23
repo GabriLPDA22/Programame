@@ -38,6 +38,8 @@ public class Sala{
                 asientos[fila][col].ocupar();
                 System.out.println("Espectador " + espectador.getNombre() + " sentado en asiento " +
                         asientos[fila][col].getFila() + asientos[fila][col].getColumna());
+
+                
                 return true;
             }
 
@@ -48,16 +50,28 @@ public class Sala{
     }
 
 
+     public Asiento getAsiento(char fila, int numero) {
+        // Verificar si los índices están dentro de los límites de la matriz.
+        if (fila >= 'A' && fila <= 'H' && numero > 0 && numero <= COLUMNAS) {
+            // Convertir la letra de la fila a un índice de matriz (por ejemplo, A=0, B=1, etc.).
+            int indiceFila = 'H' - fila;
+
+            // Obtener el asiento en la posición especificada.
+            return asientos[indiceFila][numero - 1]; // Restamos 1 porque los números de asiento generalmente comienzan desde 1.
+        } else {
+            // Manejar el caso en que los índices están fuera de los límites.
+            System.out.println("Error: asiento no válidos.");
+            return null; 
+        }
+    }
+
     public void imprimirEstadoAsientos() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirEstadoAsientos'");
+        for (int x = 0; x < FILAS; x++) {
+            for (int y = 0; y < COLUMNAS; y++) {
+                System.out.print(asientos[x][y].toString() + " "); 
+            }
+            System.out.println(); 
+        }
     }
-
-
-    public Asiento getAsiento(char c, int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAsiento'");
-    }
-
 
 }

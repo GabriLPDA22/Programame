@@ -32,4 +32,5 @@ public class Asiento {
     public void desocupar() {
         this.ocupado = false;
     }  
+    
 }
