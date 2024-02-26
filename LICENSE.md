@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) [año] [nombre completo del titular del copyright]
+Copyright (c) [2024] [Gabriel_Saiz, Adrian_Abril y Francisco_Villa]
 
 Por la presente se concede permiso, libre de cargos, a cualquier persona que obtenga una copia
 de este software y de los archivos de documentación asociados (el "Software"), a tratar
