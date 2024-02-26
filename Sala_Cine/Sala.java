@@ -71,6 +71,7 @@ public class Sala{
                 Asiento asiento = asientos[x][y];
                 System.out.print(asiento.isOcupado() ? "[X]" : "[ ]");
             }
-        }
+        System.out.println();
+    }
     }
 }
