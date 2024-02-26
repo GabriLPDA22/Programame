@@ -6,11 +6,13 @@ public class Espectador {
     String nombre;
     int edad;
     double dinero;
+    private Asiento asiento;
 
-    public Espectador(String nombre, int edad, double dinero) {
+    public Espectador(String nombre, int edad, double dinero, Asiento asiento) {
         this.nombre = nombre;
         this.edad = edad;
         this.dinero = dinero;
+        this.asiento = asiento;
     }
 
     public double getDinero()
@@ -43,9 +45,19 @@ public class Espectador {
         this.nombre = nombre;
     }
 
+    public void setAsiento(Asiento asiento) {
+        this.asiento = asiento;
+    }
+
+    public Asiento getAsiento() {
+        return this.asiento;
+    }
+
     // Sobrescribiendo el método toString()
     @Override
     public String toString() {
         return "Nombre: " + nombre + ", Edad: " + edad + ", Dinero: " + dinero;
     }
+
+
 }

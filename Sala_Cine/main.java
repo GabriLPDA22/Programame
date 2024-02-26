@@ -13,7 +13,29 @@ public class main {
         }
 
         // Crear una instancia de Pelicula
-        Pelicula miPelicula = new Pelicula("Interstellar", 169, 13, "Christopher Nolan");
+        Pelicula miPelicula = new Pelicula("Interstellar", 169, 13, "Christopher Nolan", 8.50);
+
+        // Crear la sala de cine con los asientos
+        Sala salaDeCine = new Sala();
+
+        salaDeCine.inicializarAsientos(); 
+
+        // Simulación con múltiples espectadores
+        Espectador[] espectadores = new Espectador[100]; // Supongamos que hay 100 espectadores
+        for (int i = 0; i < espectadores.length; i++) {
+            // Crear espectador con datos aleatorios o fijos
+            espectadores[i] = new Espectador("Espectador " + (i + 1), // Nombre
+                                             (int) (Math.random() * 100), // Edad
+                                             (int) (Math.random() * 50 + 5), null); // Dinero
+
+            // Intentar sentar al espectador
+            boolean sentado = salaDeCine.intentarSentar(espectadores[i], miPelicula);
+            if (sentado) {
+                System.out.println(espectadores[i].getNombre() + " ha sido sentado.");
+            } else {
+                System.out.println(espectadores[i].getNombre() + " no pudo ser sentado.");
+            }
+        }
 
         // Mostrar los detalles de la película
         System.out.println("Película creada:");
@@ -31,14 +53,10 @@ public class main {
         System.out.println("Precio de la entrada: " + miCine.getPrecioEntrada() +" $");
         System.out.println("Película en reproducción: " + miCine.getPeliculaEnReproduccion().getTitulo());
 
-        Espectador miEspectador = new Espectador("Adrian", 19, 100);
+        Espectador miEspectador = new Espectador("Adrian", 19, 100, "");
 
         // Usando toString() para imprimir la información del espectador
         System.out.println(miEspectador.toString()); // o simplemente System.out.println(miEspectador);
-
-
-        // Crear la sala de cine con los asientos
-        Sala salaDeCine = new Sala();
 
         try {    
             // Por ejemplo, el asiento 5A (sería el asiento [3][0] en la matriz)
@@ -53,6 +71,9 @@ public class main {
             
         }catch (IllegalArgumentException e) {
             System.out.println("Se ha intentado acceder a un asiento no válido: " + e.getMessage());
+        }
+        catch(java.lang.UnsupportedOperationException e){
+            System.out.println();
         }
         
         // Finalmente, podemos imprimir el estado de todos los asientos
