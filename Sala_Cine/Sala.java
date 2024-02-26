@@ -15,7 +15,7 @@ public class Sala{
     } 
     
 
-    private void inicializarAsientos() {
+    void inicializarAsientos() {
         for (int x = 0; x < FILAS; x++) {
             for (int y = 0; y < COLUMNAS; y++) {
                 // Nota que la fila 1 comienza al final de la matriz
@@ -47,6 +47,31 @@ public class Sala{
             intentos--;
         }
 
+        return false;
+    }
+
+    // Método para intentar sentar a un espectador
+    public boolean intentarSentar(Espectador espectador, Pelicula pelicula) {
+        if (espectador.getDinero() >= pelicula.getPrecioEntrada() && espectador.getEdad() >= pelicula.getEdadMinima()) {
+            Random random = new Random();
+            int intentos = FILAS * COLUMNAS;
+
+            while (intentos > 0) {
+                int fila = random.nextInt(FILAS);
+                int columna = random.nextInt(COLUMNAS);
+
+                // Verificar si el asiento está libre
+                if (!asientos[fila][columna].isOcupado()) {
+                    asientos[fila][columna].ocupar();
+                    espectador.setAsiento(asientos[fila][columna]); // Suponiendo que hay un método setAsiento en Espectador
+                    return true; // El espectador ha sido sentado con éxito
+                }
+
+                intentos--;
+            }
+        }
+
+        // No se pudo sentar al espectador
         return false;
     }
 

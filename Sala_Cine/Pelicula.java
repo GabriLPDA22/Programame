@@ -6,13 +6,15 @@ public class Pelicula {
     private int duracion; // Duración en minutos
     private int edadMinima;
     private String director;
+     private double precioEntrada; // Nuevo atributo para el precio de la entrada
 
     // Constructor de la clase Pelicula
-    public Pelicula(String titulo, int duracion, int edadMinima, String director) {
+    public Pelicula(String titulo, int duracion, int edadMinima, String director, double precioEntrada) {
         this.titulo = titulo;
         this.duracion = duracion;
         this.edadMinima = edadMinima;
         this.director = director;
+        this.precioEntrada = precioEntrada; 
     }
 
     // Geters y Setters
@@ -50,10 +52,15 @@ public class Pelicula {
         this.director = director;
     }
 
+    //Metodo para poder sacar le precio de la pelicula
+    
     public double getPrecioEntrada() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPrecioEntrada'");
+        return precioEntrada;
     }
 
+    // Setter para el precio de la entrada
+    public void setPrecioEntrada(double precioEntrada) {
+        this.precioEntrada = precioEntrada;
+    }
 
 }
