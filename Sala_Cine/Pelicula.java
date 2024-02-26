@@ -6,7 +6,7 @@ public class Pelicula {
     private int duracion; // Duración en minutos
     private int edadMinima;
     private String director;
-     private double precioEntrada; // Nuevo atributo para el precio de la entrada
+    private double precioEntrada; // Nuevo atributo para el precio de la entrada
 
     // Constructor de la clase Pelicula
     public Pelicula(String titulo, int duracion, int edadMinima, String director, double precioEntrada) {

@@ -1,6 +1,5 @@
 package Sala_Cine;
 
-
 public class Espectador {
     
     String nombre;
@@ -61,5 +60,6 @@ public class Espectador {
         return "Nombre: " + nombre + ", Edad: " + edad + ", Dinero: " + dinero;
     }
 
-
 }
+
+
