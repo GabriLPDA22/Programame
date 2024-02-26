@@ -24,9 +24,11 @@ public class main {
         Espectador[] espectadores = new Espectador[100]; // Supongamos que hay 100 espectadores
         for (int i = 0; i < espectadores.length; i++) {
             // Crear espectador con datos aleatorios o fijos
-            espectadores[i] = new Espectador("Espectador " + (i + 1), // Nombre
-                                             (int) (Math.random() * 100), // Edad
-                                             (int) (Math.random() * 50 + 5), null); // Dinero
+            espectadores[i] = new Espectador(
+                "Espectador " + (i + 1),                 // Nombre
+                (int) (Math.random() * 100),             // Edad
+                (int) (Math.random() * 50 + 5)           // Dinero
+            ); // Nota: hemos eliminado el cuarto argumento 'null'
 
             // Intentar sentar al espectador
             boolean sentado = salaDeCine.intentarSentar(espectadores[i], miPelicula);
@@ -53,7 +55,7 @@ public class main {
         System.out.println("Precio de la entrada: " + miCine.getPrecioEntrada() +" $");
         System.out.println("Película en reproducción: " + miCine.getPeliculaEnReproduccion().getTitulo());
 
-        Espectador miEspectador = new Espectador("Adrian", 19, 100, "");
+        Espectador miEspectador = new Espectador("Adrian", 19, 100);
 
         // Usando toString() para imprimir la información del espectador
         System.out.println(miEspectador.toString()); // o simplemente System.out.println(miEspectador);

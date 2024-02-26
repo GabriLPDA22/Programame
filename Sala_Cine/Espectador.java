@@ -8,11 +8,11 @@ public class Espectador {
     double dinero;
     private Asiento asiento;
 
-    public Espectador(String nombre, int edad, double dinero, Asiento asiento) {
+    public Espectador(String nombre, int edad, double dinero) {
         this.nombre = nombre;
         this.edad = edad;
         this.dinero = dinero;
-        this.asiento = asiento;
+        this.asiento = null;
     }
 
     public double getDinero()
@@ -45,10 +45,12 @@ public class Espectador {
         this.nombre = nombre;
     }
 
+    // Método para asignar un asiento al espectador
     public void setAsiento(Asiento asiento) {
         this.asiento = asiento;
     }
 
+    // Método para obtener el asiento del espectador
     public Asiento getAsiento() {
         return this.asiento;
     }
