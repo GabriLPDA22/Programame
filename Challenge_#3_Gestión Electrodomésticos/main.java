@@ -3,11 +3,9 @@ public class TiendaElectrodomesticos {
         Electrodomestico[] electrodomesticos = new Electrodomestico[10];
         
         // Asignar objetos a cada posición del array
-        // Ejemplo de asignación, ajustar según necesidad
         electrodomesticos[0] = new Electrodomestico();
         electrodomesticos[1] = new Lavadora(200, 30, 'A', "negro", 40);
         electrodomesticos[2] = new Television(500, 20, 'B', "rojo", 55, true);
-        // Continuar asignando objetos...
         
         double precioElectrodomesticos = 0;
         double precioLavadoras = 0;
