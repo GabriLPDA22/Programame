@@ -1,4 +1,4 @@
-public class TiendaElectrodomesticos {
+public class main {
     public static void main(String[] args) {
         Electrodomestico[] electrodomesticos = new Electrodomestico[10];
         
