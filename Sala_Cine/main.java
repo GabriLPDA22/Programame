@@ -73,7 +73,7 @@ public class main {
             }
         }
 
-          // HEMOS QUITADO EL TRY CATCH PORQUE LO EMOS PODIDO HACER DE OTRA MANERA
+          // HEMOS QUITADO EL TRY CATCH PORQUE LO HEMOS PODIDO HACER DE OTRA MANERA
 
           // Trabajar con un asiento específico
           /*try {
