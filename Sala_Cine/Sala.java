@@ -11,10 +11,11 @@ public class Sala{
     
     public Sala(){
         asientos = new Asiento[FILAS][COLUMNAS];
+        inicializarAsientos();
     } 
     
 
-    public void inicializarAsientos() {
+    private void inicializarAsientos() {
         for (int x = 0; x < FILAS; x++) {
             for (int y = 0; y < COLUMNAS; y++) {
                 // Nota que la fila 1 comienza al final de la matriz
@@ -49,17 +50,27 @@ public class Sala{
         return false;
     }
 
+    // Método para obtener un asiento específico
+    public Asiento getAsiento(char filaLetra, int numero) {
+        int fila = numero - 1; // Suponemos que el número 1 corresponde a la primera fila
+        int columna = filaLetra - 'A'; // Convierte la letra de la fila en un índice (A -> 0, B -> 1, etc.)
+        
+        // Verificar que los índices están dentro de los límites de la matriz de asientos
+        if (fila >= 0 && fila < FILAS && columna >= 0 && columna < COLUMNAS) {
+            return asientos[fila][columna];
+        } else {
+            //  Aqui lanzamos una excepción o devolver null para indicar que el asiento no existe
+            throw new IllegalArgumentException("Asiento no válido: " + filaLetra + numero);
+        }
+    }
 
+    // Método para imprimir el estado de todos los asientos
     public void imprimirEstadoAsientos() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirEstadoAsientos'");
+        for (int x = 0; x < FILAS; x++) {
+            for (int y = 0; y < COLUMNAS; y++) {
+                Asiento asiento = asientos[x][y];
+                System.out.print(asiento.isOcupado() ? "[X]" : "[ ]");
+            }
+        }
     }
-
-
-    public Asiento getAsiento(char c, int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAsiento'");
-    }
-
-
 }

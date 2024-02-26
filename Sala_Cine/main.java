@@ -2,7 +2,16 @@ package Sala_Cine;
 
 
 public class main {
+
     public static void main(String[] args) {
+
+        try {
+            // llama a getAsiento
+        } catch (UnsupportedOperationException e) {
+            // Manejar la excepción, quizás informando al usuario que la acción no está disponible
+            System.out.println(e.getMessage());
+        }
+
         // Crear una instancia de Pelicula
         Pelicula miPelicula = new Pelicula("Interstellar", 169, 13, "Christopher Nolan");
 
@@ -31,17 +40,21 @@ public class main {
         // Crear la sala de cine con los asientos
         Sala salaDeCine = new Sala();
 
-        // Supongamos que queremos comprobar si un asiento específico está ocupado
-        // Por ejemplo, el asiento 5A (sería el asiento [3][0] en la matriz)
-        Asiento miAsiento = salaDeCine.getAsiento('A', 5);
+        try {    
+            // Por ejemplo, el asiento 5A (sería el asiento [3][0] en la matriz)
+            Asiento miAsiento = salaDeCine.getAsiento('A', 5);
 
-        // Comprobar si el asiento está ocupado
-        System.out.println("¿Está ocupado el asiento 5A? " + miAsiento.isOcupado());
+            // Comprobar si el asiento está ocupado
+            System.out.println("¿Está ocupado el asiento 5A? " + miAsiento.isOcupado());
 
-        // Ahora, vamos a "ocupar" este asiento y volver a comprobar
-        miAsiento.ocupar();  // Suponiendo que este método cambia el estado a ocupado
-        System.out.println("¿Está ocupado el asiento 5A después de ocuparlo? " + miAsiento.isOcupado());
-
+            // Ahora, vamos a "ocupar" este asiento y volver a comprobar
+            miAsiento.ocupar();  
+            System.out.println("¿Está ocupado el asiento 5A después de ocuparlo? " + miAsiento.isOcupado());
+            
+        }catch (IllegalArgumentException e) {
+            System.out.println("Se ha intentado acceder a un asiento no válido: " + e.getMessage());
+        }
+        
         // Finalmente, podemos imprimir el estado de todos los asientos
         System.out.println("Estado inicial de todos los asientos:");
         salaDeCine.imprimirEstadoAsientos();
