@@ -1,39 +1,38 @@
-## :trophy: Retos de Programame
+# Sistema de Gestión de Cine
 
-Bienvenido/a al repositorio de retos de Programame, un espacio dedicado a enfrentar desafíos de programación inspirados en la competición "Programame", enfocada en estudiantes y entusiastas de la programación de todos los niveles. Aquí podrás practicar tus habilidades, aprender de manera divertida y prepararte para competiciones.
+Este programa simula la gestión de una sala de cine, controlando la asignación de asientos a los espectadores, la información de las películas en cartelera, y el manejo de los espectadores.
 
-## :bookmark: Acerca de Programame
+## Características
 
-"Programame" es una competición que busca fomentar el interés por la programación a través de desafíos que promueven el trabajo en equipo y el desarrollo de habilidades en algoritmos y estructuras de datos. Para más información sobre la competición y cómo participar, visita el sitio oficial de [Programame](https://www.programame.com).
+- **Gestión de Películas**: Permite registrar películas con detalles como título, duración, edad mínima y director.
+- **Gestión de Espectadores**: Maneja la información de los espectadores, incluyendo su nombre, edad y dinero disponible.
+- **Gestión de Asientos**: Controla los asientos de una sala de cine que consta de 8 filas por 9 columnas.
+- **Asignación de Asientos**: Asigna asientos a los espectadores de manera aleatoria, teniendo en cuenta la disponibilidad, el presupuesto del espectador y las restricciones de edad.
 
-## :computer: Los Retos
+## Estructura del Proyecto
 
-En este repositorio encontrarás una variedad de retos, desde ejercicios de lógica básica hasta problemas que requieren un conocimiento avanzado en algoritmos. Cada reto cuenta con una descripción detallada, ejemplos de entradas/salidas y un espacio para subir tu solución.
+El proyecto consta de las siguientes clases Java:
 
-## :wrench: ¿Cómo Contribuir?
+- `Asiento.java`: Define los atributos de los asientos en el cine.
+- `Cine.java`: Contiene la información del cine, como la película actual y el precio de la entrada.
+- `Espectador.java`: Modela a un espectador con su nombre, edad y dinero.
+- `Pelicula.java`: Almacena los detalles de las películas disponibles en el cine.
+- `Sala.java`: Encapsula la estructura y la gestión de los asientos de la sala de cine.
+- `main.java`: Contiene el método `main` para ejecutar la simulación.
 
-Si estás interesado/a en contribuir con nuevos retos o soluciones, te invitamos a seguir estos pasos:
+## Cómo Ejecutar
 
-1. **Haz un Fork** del repositorio.
-2. **Clona** tu fork a tu entorno local.
-3. **Crea** una nueva rama para tus aportes.
-4. **Añade** tus retos o soluciones.
-5. **Haz Commit** de tus cambios con mensajes claros.
-6. **Haz Push** a tu rama y abre un **Pull Request**.
+1. Asegúrate de tener [Java](https://www.java.com/es/download/) instalado en tu sistema.
+2. Descarga los archivos del proyecto a tu directorio local.
+3. Abre una terminal y navega al directorio donde guardaste los archivos.
+4. Compila el proyecto con el comando `javac NombreDelArchivo.java`.
+5. Ejecuta el programa con el comando `java NombreDeLaClasePrincipal`.
 
-## :busts_in_silhouette: Participantes
+## Ejemplo de Uso
 
-Este espacio está dedicado a todos aquellos que han contribuido al repositorio, ya sea aportando soluciones, retos o mejorando la documentación. ¡Gracias por hacer crecer esta comunidad!
+Describe cómo se utiliza el programa, puedes incluir algunos ejemplos de comandos de entrada y la salida esperada.
 
-- [**Franvilla03**](https://github.com/Franvilla03)
-- [**Adrian Abril**](https://github.com/Adrian-Abril)
-- [**GabriLPDA22**](https://github.com/GabriLPDA22)
+## Contribuir
 
+Si deseas contribuir al proyecto, por favor envía un pull request o abre un issue para discutir los cambios propuestos.
 
-## :question: Soporte
-
-Si tienes dudas o necesitas ayuda con alguno de los retos, no dudes en abrir un **Issue** o contactar directamente a los administradores del repositorio.
-
----
-
-¡Agradecemos tu interés y contribuciones a este repositorio de retos de Programame! :heart: Recuerda que la práctica y la perseverancia son claves para mejorar en el mundo de la programación.
