@@ -1,3 +1,6 @@
+package Sala_Cine;
+
+
 public class Espectador {
     
     String nombre;

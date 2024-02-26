@@ -1,3 +1,6 @@
+package Sala_Cine;
+
+
 public class Cine {
     
     // Atributos de la clase Cine

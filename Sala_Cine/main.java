@@ -1,3 +1,6 @@
+package Sala_Cine;
+
+
 public class main {
     public static void main(String[] args) {
         // Crear una instancia de Pelicula

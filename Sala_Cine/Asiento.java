@@ -1,3 +1,6 @@
+package Sala_Cine;
+
+
 public class Asiento {
     private final char columna;
     public final int fila;

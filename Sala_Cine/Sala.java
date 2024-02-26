@@ -1,3 +1,5 @@
+package Sala_Cine;
+
 import java.util.Random;
 
 public class Sala{

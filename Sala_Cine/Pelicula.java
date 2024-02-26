@@ -1,3 +1,5 @@
+package Sala_Cine;
+
 public class Pelicula {
     // Atributos de la clase Pelicula
     private String titulo;
